@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="style.css"/>
 
     <title>Tic Tac Toe </title>
+    <link rel="icon" href="xo.png">
 </head>
-<body>
-    <h1>Aisha's Tic Tac Toe Game </h1>
-   <h2>X turns</h2>
-     <form>    
+<body id="game">
+        <form onsubmit="return false">
+            
+ <!--<h1>Aisha's Tic Tac Toe Game </h1>-->
+ <button id="mutebtn"></button>
+
+ 
+<h2></h2>
+   <div id ="p1"></div>
+   <form>
 <div class="container">
         <div class="item"id="1"></div>
         <div class="item"id="2"></div>
@@ -24,13 +31,15 @@
         <div class="item"id="9"></div>  
 
 </div>
-<button type="reset" value="Reset"> Reset</button>
+ <div id ="p2"></div>
+ <button type="reset" value="Reset" id="reset"> Reset</button>
 
-</form>  
+</form>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
     <script src="app.js"> </script>
+</form>
 </body>
 </html>
