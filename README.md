@@ -1,4 +1,4 @@
-# Tic Tac Toe Game ![tic tac toe](xocopy.png)
+# ![tic tac toe](xocopy.png) Tic Tac Toe Game 
 
 ## Objectives
 
