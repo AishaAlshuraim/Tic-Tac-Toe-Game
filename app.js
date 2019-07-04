@@ -91,6 +91,8 @@ function reset(){
         wins.innerText = "";
         this.setAttribute("data", " ");
         thor.style.opacity = "0.6";
+        iron.style.opacity = "1";
+
         count=1;
     
     }
