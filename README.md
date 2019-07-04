@@ -1,4 +1,4 @@
-# Tic Tac Toe Game [![tic tac toe]("xo.png")]
+# Tic Tac Toe Game [![tic tac toe](xo.png)]
 
 ## Objectives
 
