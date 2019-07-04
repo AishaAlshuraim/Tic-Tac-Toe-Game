@@ -21,14 +21,12 @@ var wins = document.querySelector('h2');
 var count= 1; 
 const clicked = function () {
     if (count%2 !== 0 ){
-        //this.style.textShadow= "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black";
         this.innerHTML= "<img src=\"ironFace.png\">";
         this.setAttribute("data", "x");
 
         count++;
      if(win()) {
-      //   console.log("win i");
-       //cont.innerHTML = "<img src=\"ironWin.gif\">";
+     ;
        wins.innerText="IRON MAN WINS";
        contain.style.pointerEvents= 'none';  
       }
@@ -38,19 +36,15 @@ const clicked = function () {
         iron.style.opacity = "0.6";
         thor.style.opacity = "1";
 
-   // turns.innerHTML = "O turns"
     }}
     else { 
         this.style.textStroke= "1px black";
-       // this.style.size= "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black";
        this.innerHTML= "<img src=\"thor-png-25750.png\">";
        this.setAttribute("data", "o");
        count++;
     if(win()) {
-       // cont.innerHTML = "<img src=\"thorWin.gif\">";
         wins.innerText="THOR WINS";
-        //console.log("win");
-   // turns.innerHTML = " O is the winner !";
+   
     contain.style.pointerEvents = 'none'; 
  }
     else if(count== 10){
@@ -60,12 +54,10 @@ else{
     thor.style.opacity = "0.6";
     iron.style.opacity = "1";
 
-//turns.innerHTML = "X turns"
 }}
 }
 flag = false;
 const win = function(){
-    // console.log(cells[0].getAttribute("data"));
     
       if( cells[0].getAttribute("data")!==null && cells[0].getAttribute("data") == cells[1].getAttribute("data") && cells[0].getAttribute("data")== cells[2].getAttribute("data") ){
           
@@ -92,7 +84,6 @@ return flag;
     
     
     }
-    butt.addEventListener('click',reset);
 
 function reset(){
     for(var i=0 ;i<cells.length;i++){
@@ -108,6 +99,7 @@ function reset(){
         cell.addEventListener('click',clicked , {once : true});
       })
 }
+butt.addEventListener('click',reset);
 
     
 
@@ -132,25 +124,19 @@ window.addEventListener("load", initAudioPlayer);
  function mute(event){
      event.preventDefault();
 
-    // e.preventDefault();
-     //console.log('clicked')
+    
          if(audio.muted){
 
          audio.muted = false;
-         //$('#mutebtn').css("background-image", "url(speaker.png)");  
 
         mutebtn.style.background = "url(speaker.png) no-repeat";
-       // $("mutebtn").attr("style","border:none");
-       // mutebtn.style.border="none";
+  
 
      } else {     
          audio.muted = true;
-       // $('#mutebtn').css("background-image", "url(mute.png)");  
 
          mutebtn.style.background = "url(mute.png) no-repeat";
-        // $("mutebtn").attr("style","border:none");
 
-        // mutebtn.style.border="none";
 
      }
  }
@@ -159,7 +145,3 @@ window.addEventListener("load", initAudioPlayer);
 
 
 
-
-
-// element.getAttribute("data-columns"); // 3
-// element.setAttribute("data-columns", 3);
