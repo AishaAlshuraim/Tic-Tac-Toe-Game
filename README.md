@@ -24,3 +24,7 @@
 - As a user, I want be able to play the game again without refreshing the page
 - As a user, I want be able to mute the audio
 
+## Project Link:
+
+https://aishaalshuraim.github.io/Tic-Tac-Toe-Game/game.html
+
